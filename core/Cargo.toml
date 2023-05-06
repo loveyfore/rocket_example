@@ -10,9 +10,11 @@ entity = { path = "../entity" }
 
 [dependencies.sea-orm]
 # path = "../../../" # remove this line in your own project
-version = "0.11.0" # sea-orm version
+version = "0.11.3" # sea-orm version
 features = [
-    "runtime-tokio-native-tls",
+    # 会导致跨平台编译报错？？SSL_ctrl等函数找不到？？
+    # "runtime-tokio-native-tls",
+    "runtime-tokio-rustls",
     # "sqlx-postgres",
     "sqlx-mysql",
     # "sqlx-sqlite",

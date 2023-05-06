@@ -9,3 +9,8 @@ url = "mysql://root:root@localhost/rocket_example"
 # Postgres
 # make sure to enable "sqlx-postgres" feature in Cargo.toml, i.e default = ["sqlx-postgres"]
 # url = "postgres://root:root@localhost/rocket_example"
+
+# 跨平台编译命令
+# CROSS_COMPILE=x86_64-linux-musl- cargo build --release --target x86_64-unknown-linux-musl
+# CROSS_COMPILE=x86_64-linux-musl- cargo build --release --target x86_64-unknown-linux-musl
+
